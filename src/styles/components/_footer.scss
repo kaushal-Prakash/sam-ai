@@ -1,0 +1,42 @@
+.footer {
+  position: relative; // Needed for absolute children
+  height: 30vh;
+  bottom: 0;
+  width: 100%;
+  background-color: $cs-blue;
+  text-align: center;
+  font-weight: 700;
+  overflow: hidden;
+
+  &__p1 {
+    font-size: 8rem;
+    background: linear-gradient(to bottom, $cs-orange, transparent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 100;
+    position: relative; // Ensure it's above background image
+  }
+
+  &__p2 {
+    color: $cs-orange;
+    z-index: 100;
+    position: relative;
+  }
+
+  &__img {
+    height: 20rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.3;
+    z-index: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer__p1 {
+    font-size: 4.6rem;
+  }
+}
