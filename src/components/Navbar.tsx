@@ -22,31 +22,32 @@ function Navbar() {
   return (
     <>
       {/* Desktop Navbar - hidden on mobile */}
-      <div className="hidden md:flex justify-center mt-8 navbar">
-        <div className="flex items-center justify-between backdrop-blur-lg bg-white/10 shadow-lg rounded-full px-8 py-3 w-[90%] max-w-6xl border border-white/40">
+      <div className="hidden md:flex md:fixed justify-center mt-8 navbar bg-transparent w-full">
+        <div className="flex items-center bg-white/20 justify-between backdrop-blur-lg bg-(cs--darker-blue))/20 shadow-lg rounded-full px-8 py-3 w-[90%] max-w-6xl border border-(--cs-blue)">
           {/* Left side links */}
           <div className="flex items-center justify-center space-x-6 flex-1 font-semibold text-cs-dark-blue tracking-wider navbar__link">
-            <Link href="/prediction" className="hover:text-(--cs-orange)">Prediction</Link>
-            <Link href="/reports" className="hover:text-(--cs-orange)">Reports</Link>
-            <Link href="/reports" className="hover:text-(--cs-orange)">Trends</Link>
+            <Link href="/prediction" className="hover:text-(--cs-orange) navbar__link-text">Prediction</Link>
+            <Link href="/reports" className="hover:text-(--cs-orange) navbar__link-text">Reports</Link>
+            <Link href="/reports" className="hover:text-(--cs-orange) navbar__link-text">Trends</Link>
           </div>
 
           {/* Center logo */}
-          <div className="flex justify-center w-[104px] navbar__logo">
+          <div className="flex justify-center w-[104px] navbar__logo cursor-pointer">
             <Image
               src="/logo.png"
               alt="Logo"
               width={52}
               height={52}
               className="object-contain"
+              onClick={() => window.location.href = '/'}
             />
           </div>
 
           {/* Right side links */}
           <div className="flex items-center justify-center space-x-6 flex-1 tracking-wider font-semibold text-cs-dark-blue navbar__link">
-            <Link href="#" className="hover:text-(--cs-orange)">Home</Link>
-            <Link href="#" className="hover:text-(--cs-orange)">Contact</Link>
-            <Link href="#" className="hover:text-(--cs-orange)">About Us</Link>
+            <Link href="#" className="hover:text-(--cs-orange) navbar__link-text">Home</Link>
+            <Link href="#" className="hover:text-(--cs-orange) navbar__link-text">Contact</Link>
+            <Link href="#" className="hover:text-(--cs-orange) navbar__link-text">About Us</Link>
           </div>
         </div>
       </div>
