@@ -53,7 +53,7 @@ function Navbar() {
       </div>
 
       {/* Mobile Navbar - visible on small screens */}
-      <div className="md:hidden flex justify-between items-center p-4 backdrop-blur-lg">
+      <div className="md:hidden flex justify-between items-center p-4 backdrop-blur-lg z-[1000]">
       {/* Logo */}
       <div className="w-10 h-10">
         <Image

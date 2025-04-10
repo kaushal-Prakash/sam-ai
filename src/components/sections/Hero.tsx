@@ -6,12 +6,12 @@ function Hero() {
       <img
         src="/hero/trees-1.png"
         alt="trees 1"
-        className="absolute w-full h-full object-fill object-center tree-1"
+        className="absolute w-full h-full object-cover object-center tree-1"
       />
       <img
         src="/hero/trees-2.png"
         alt="trees 2"
-        className="absolute w-full h-full object-fill object-center tree-2"
+        className="absolute w-full h-full object-cover object-center tree-2"
       />
       <img
         src="/hero/flame-2.png"
@@ -22,4 +22,4 @@ function Hero() {
   );
 }
 
-export default Hero
+export default Hero;
