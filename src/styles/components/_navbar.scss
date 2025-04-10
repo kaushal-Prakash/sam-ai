@@ -1,0 +1,14 @@
+
+.navbar{
+    animation: top-to-down 0.5s ease-in-out;
+
+    &__link{
+        animation: left-to-right 0.5s ease-in-out;
+        animation-delay: 0.2s;
+    }
+
+    &__logo{
+        animation: rotate-full 0.5s ease-in-out;
+        animation-delay: 0.1s;
+    }
+}
