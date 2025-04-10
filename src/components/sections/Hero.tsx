@@ -42,7 +42,7 @@ function Hero() {
         </h1>
       </div>
 
-      <div className="bg-[#000814]/67 absolute bottom-20 p-6 rounded-xl border-[1px] border-[#FFD60A]">
+      <div className="bg-[#000814]/67 absolute bottom-20 px-6 py-3 rounded-xl border-[1px] border-[#FFD60A]">
         <h1
           style={{ fontFamily: "'Poppins', sans-serif" }}
           className="text-[#FFD60A]  text-[32px] tracking-wider font-extrabold"
