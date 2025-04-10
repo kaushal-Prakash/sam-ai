@@ -1,20 +1,20 @@
 .hero {
-  position: relative;
   margin: 0;
-    padding: 0;
-  width: 100%;
-  height: 100vh;
+  padding: 0;
 }
 
 .tree-1 {
-  z-index: -1;
-}
-
-.tree-2 {
   z-index: -2;
 }
 
-.flame-2 {
-  z-index: 0;
+.tree-2 {
+  z-index: -3;
 }
 
+.flame-2 {
+  z-index: -1;
+}
+
+.varun{
+  -webkit-text-stroke: 2px #001D3D;
+}
