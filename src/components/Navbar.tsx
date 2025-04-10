@@ -26,7 +26,7 @@ function Navbar() {
         <div className="flex items-center justify-between backdrop-blur-lg bg-white/10 shadow-lg rounded-full px-8 py-3 w-[90%] max-w-6xl border border-white/40">
           {/* Left side links */}
           <div className="flex items-center justify-center space-x-6 flex-1 font-semibold text-cs-dark-blue tracking-wider navbar__link">
-            <Link href="/prediction" className="hover:text-cs-orange">Prediction</Link>
+            <Link href="/prediction" className="hover:text-(--cs-orange)">Prediction</Link>
             <Link href="/reports" className="hover:text-(--cs-orange)">Reports</Link>
             <Link href="/reports" className="hover:text-(--cs-orange)">Trends</Link>
           </div>
