@@ -47,7 +47,7 @@ function Navbar() {
           {/* Right side links */}
           <div className="flex items-center justify-center space-x-6 flex-1 tracking-wider font-semibold text-cs-dark-blue navbar__link">
             <Link href="#" className="hover:text-(--cs-orange) navbar__link-text">Home</Link>
-            <Link href="#" className="hover:text-(--cs-orange) navbar__link-text">Contact</Link>
+            <Link href="/contact-us" className="hover:text-(--cs-orange) navbar__link-text">Contact</Link>
             <Link href="#" className="hover:text-(--cs-orange) navbar__link-text">About Us</Link>
           </div>
         </div>
@@ -114,7 +114,7 @@ function Navbar() {
               { label: 'Prediction', href: '/prediction' },
               { label: 'Reports', href: '/reports' },
               { label: 'Trends', href: '/trends' },
-              { label: 'Contact', href: '/contact' },
+              { label: 'Contact', href: '/contact-us' },
               { label: 'About Us', href: '/about' },
             ].map(({ label, href }) => (
               <Link

@@ -1,0 +1,23 @@
+.contact{
+    &__header{
+        animation: down-to-up-sm 0.5s ease-in-out;
+    }
+
+    &__form{
+        animation: down-to-up-lg 0.7s ease-in-out;
+    }
+
+    &__info{
+        animation: down-to-up-lg 0.7s ease-in-out;
+    }
+
+    &__emergency{
+        animation: down-to-up-lg 0.7s ease-in-out;
+    }
+
+    
+}
+
+.fly{
+    animation: fly-around 0.5s ease-in-out;
+}
