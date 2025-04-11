@@ -53,7 +53,7 @@ function Navbar() {
       </div>
 
       {/* Mobile Navbar - visible on small screens */}
-      <div className="md:hidden flex justify-between items-center p-4 backdrop-blur-lg z-[1000]">
+      <div className="md:hidden fixed w-full top-0 flex justify-between items-center p-4 backdrop-blur-lg z-[1000] rounded-b-lg">
       {/* Logo */}
       <div className="w-10 h-10">
         <Image
@@ -80,7 +80,7 @@ function Navbar() {
 
       {/* Full-screen Mobile Menu */}
       <div
-        className={`fixed inset-0 z-50 transition-all duration-300 ease-in-out ${
+        className={`fixed inset-0 transition-all backdrop-blur-lg duration-300 ease-in-out z-[1000] ${
           isMobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
         }`}
       >
@@ -92,7 +92,7 @@ function Navbar() {
 
         {/* Menu Content */}
         <div
-          className={`absolute h-screen inset-0 backdrop-blur-lg transform transition-transform duration-300 ease-in-out ${
+          className={`absolute h-screen inset-0 backdrop-blur-lg transform transition-transform duration-300 ease-in-out z-[1000] ${
             isMobileMenuOpen ? 'translate-y-0' : '-translate-y-full'
           } flex flex-col p-6`}
         >
