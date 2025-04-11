@@ -39,7 +39,7 @@ function Hero() {
       </div>
 
       {/* Button */}
-      <div className="bg-[#000814]/67 absolute bottom-10 sm:bottom-20 px-4 sm:px-6 py-2 sm:py-3 rounded-[100px] border-[1px] border-[#FFD60A] z-10 hero__button">
+      <div className="bg-[#000814]/67 absolute bottom-10 sm:bottom-40 px-4 sm:px-6 py-2 sm:py-3 rounded-[100px] border-[1px] border-[#FFD60A] z-10 hero__button">
         <Link
           href="/prediction"
           style={{ fontFamily: "'Poppins', sans-serif" }}
