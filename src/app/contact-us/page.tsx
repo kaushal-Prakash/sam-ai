@@ -1,14 +1,15 @@
 "use client";
-import React, { useState } from "react";
+/* disable eslint */
+// import React, { useState } from "react";
 import { FiMail, FiPhone, FiMapPin, FiSend } from "react-icons/fi";
 
 const ContactPage = () => {
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [showSuccess, setShowSuccess] = useState(false);
+//   const [isSubmitting, setIsSubmitting] = useState(false);
+//   const [showSuccess, setShowSuccess] = useState(false);
 
   const handleSubmit = (e : React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
+    // setIsSubmitting(true);
 
     const plane = document.querySelector(".plane");
     plane?.classList.add("fly");
@@ -114,7 +115,7 @@ const ContactPage = () => {
                 Forest Fire Emergency
               </h3>
               <p className="text-[#fca5a5] mt-2 text-sm">
-                If you're reporting an active forest fire, please call the
+                If you&apos;re reporting an active forest fire, please call the
                 emergency hotline immediately.
               </p>
             </div>

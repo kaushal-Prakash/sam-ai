@@ -11,7 +11,7 @@ const AboutPage = () => {
           About Varun AI
         </h1>
         <p className="text-xl md:text-2xl text-[#cbd5e1] max-w-4xl mx-auto">
-          A machine learning-driven platform predicting forest fire risks using NASA's datasets and advanced analytics.
+          A machine learning-driven platform predicting forest fire risks using NASA&apos;s datasets and advanced analytics.
         </p>
       </div>
 
