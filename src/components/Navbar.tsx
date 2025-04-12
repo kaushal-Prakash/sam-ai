@@ -24,7 +24,7 @@ function Navbar() {
     <>
       {/* Desktop Navbar - hidden on mobile */}
       <div className="hidden md:flex md:fixed justify-center mt-8 navbar bg-transparent w-full">
-        <div className="flex items-center bg-white/20 justify-between backdrop-blur-lg bg-(cs--darker-blue))/20 shadow-lg rounded-full px-8 py-3 w-[90%] max-w-6xl border border-(--cs-blue)">
+        <div className="flex items-center bg-white/40 justify-between backdrop-blur-lg bg-(cs--darker-blue))/20 shadow-lg rounded-full px-8 py-3 w-[90%] max-w-6xl border border-(--cs-blue)">
           {/* Left side links */}
           <div className="flex items-center justify-center space-x-6 flex-1 font-semibold text-cs-dark-blue tracking-wider navbar__link">
             <Link href="/prediction" className="hover:text-(--cs-orange) navbar__link-text">Prediction</Link>
@@ -54,7 +54,7 @@ function Navbar() {
       </div>
 
       {/* Mobile Navbar - visible on small screens */}
-      <div className="md:hidden fixed w-full top-0 flex justify-between items-center p-4 backdrop-blur-lg z-[1000] rounded-b-lg">
+      <div className="md:hidden fixed w-full top-0 flex justify-between items-center p-4 bg-white/40 backdrop-blur-lg z-[1000] rounded-b-lg">
       {/* Logo */}
       <div className="w-10 h-10">
         <Image
