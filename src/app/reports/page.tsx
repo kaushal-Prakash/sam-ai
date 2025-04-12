@@ -71,7 +71,7 @@ export default function NewsPage() {
       </div>
 
       {/* Main content */}
-      <div className="relative z-10 container mx-auto px-4 py-16 md:py-24">
+      <div className="relative z-10 container mx-auto px-6 py-16 md:py-24">
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-6xl pt-5 font-bold bg-clip-text text-transparent bg-gradient-to-r from-(--cs-yellow) to-[#FFC300] mb-4">
