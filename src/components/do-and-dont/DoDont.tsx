@@ -19,7 +19,7 @@ const DoDont = () => {
       </div>
 
       <div className='absolute bottom-10 flex gap-40 text-white text-[32px] font-semibold'>
-        <div className='bg-[#000814]/10 backdrop-blur-md backdrop-brightness-90 rounded-xl  w-[35rem] h-[34rem]  px-4 py-6 border-[1px] border-[#FFD60A] shadow-lg shadow-[#000814]'>
+        <div className='bg-[#000814]/10 backdrop-blur-md backdrop-brightness-90 rounded-xl  w-[35rem] h-[34rem]  px-4 py-6 border-[1px] border-(--cs-yellow) shadow-lg shadow-[#000814]'>
         <h1>Do's:</h1>
         <ul className='list-disc pl-16'>
             <li>Properly dispose of cigarette butts.</li>
