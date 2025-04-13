@@ -12,9 +12,11 @@ export default function NewsPage() {
     try {
       setLoading(true);
       setError(null);
+      console.log(process.env.NEXT_PUBLIC_NEWS_API_KEY)
       const response = await fetch(
         `https://newsapi.org/v2/everything?q=forest-fire&top-headlines?country=*&apiKey=${process.env.NEXT_PUBLIC_NEWS_API_KEY}`
       );
+      console.log(response)
       
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
