@@ -1,6 +1,55 @@
 .hero {
   margin: 0;
   padding: 0;
+
+  &__text {
+    z-index: 0;
+    align-self: center;
+    text-align: center;
+    position: relative;
+
+    &::before{
+      content: "VARUN AI";
+      position: absolute;
+      background: transparent;
+      z-index: -1;
+      -webkit-text-stroke: 1px $cs-blue;
+    }
+  }
+
+  &__button {
+    transition: all 0.3s ease-in-out;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      border-radius: 10rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: all 0.4s;
+      opacity: 0.4;
+      background-color: $cs-blue;
+    }
+
+    &:hover::after {
+      transform: scale(1.4, 1.6);
+      opacity: 0;
+    }
+
+    &:hover{
+      transform: translateY(-0.3rem);
+      box-shadow: 0 0 1rem $cs-blue;
+    }
+
+    &:active{
+      transform: translateY(-0.2rem);
+      box-shadow: 0 0 0.6rem $cs-blue;
+    }
+  }
 }
 
 .tree-1 {
@@ -12,9 +61,10 @@
 }
 
 .flame-2 {
-  z-index: -1;
+  z-index: 3;
+  opacity: 0.6;
 }
 
-.varun{
-  -webkit-text-stroke: 2px #001D3D;
+.varun {
+  -webkit-text-stroke: 2px #001d3d;
 }

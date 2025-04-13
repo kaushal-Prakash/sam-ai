@@ -1,4 +1,5 @@
 "use client";
+/* disable eslint */
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -23,7 +24,7 @@ function Navbar() {
     <>
       {/* Desktop Navbar - hidden on mobile */}
       <div className="hidden md:flex md:fixed justify-center mt-8 navbar bg-transparent w-full">
-        <div className="flex items-center bg-white/20 justify-between backdrop-blur-lg bg-(cs--darker-blue))/20 shadow-lg rounded-full px-8 py-3 w-[90%] max-w-6xl border border-(--cs-blue)">
+        <div className="flex items-center bg-white/40 justify-between backdrop-blur-lg bg-(cs--darker-blue))/20 shadow-lg rounded-full px-8 py-3 w-[90%] max-w-6xl border border-(--cs-blue)">
           {/* Left side links */}
           <div className="flex items-center justify-center space-x-6 flex-1 font-semibold text-cs-dark-blue tracking-wider navbar__link">
             <Link href="/prediction" className="hover:text-(--cs-orange) navbar__link-text">Prediction</Link>
@@ -46,14 +47,14 @@ function Navbar() {
           {/* Right side links */}
           <div className="flex items-center justify-center space-x-6 flex-1 tracking-wider font-semibold text-cs-dark-blue navbar__link">
             <Link href="#" className="hover:text-(--cs-orange) navbar__link-text">Home</Link>
-            <Link href="#" className="hover:text-(--cs-orange) navbar__link-text">Contact</Link>
-            <Link href="#" className="hover:text-(--cs-orange) navbar__link-text">About Us</Link>
+            <Link href="/contact-us" className="hover:text-(--cs-orange) navbar__link-text">Contact</Link>
+            <Link href="/about-us" className="hover:text-(--cs-orange) navbar__link-text">About Us</Link>
           </div>
         </div>
       </div>
 
       {/* Mobile Navbar - visible on small screens */}
-      <div className="md:hidden flex justify-between items-center p-4 backdrop-blur-lg z-[1000]">
+      <div className="md:hidden fixed w-full top-0 flex justify-between items-center p-4 bg-white/40 backdrop-blur-lg z-[1000] rounded-b-lg">
       {/* Logo */}
       <div className="w-10 h-10">
         <Image
@@ -80,7 +81,7 @@ function Navbar() {
 
       {/* Full-screen Mobile Menu */}
       <div
-        className={`fixed inset-0 z-50 transition-all duration-300 ease-in-out ${
+        className={`fixed inset-0 transition-all backdrop-blur-lg duration-300 ease-in-out z-[1000] ${
           isMobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
         }`}
       >
@@ -92,7 +93,7 @@ function Navbar() {
 
         {/* Menu Content */}
         <div
-          className={`absolute h-screen inset-0 backdrop-blur-lg transform transition-transform duration-300 ease-in-out ${
+          className={`absolute h-screen inset-0 backdrop-blur-lg transform transition-transform duration-300 ease-in-out z-[1000] ${
             isMobileMenuOpen ? 'translate-y-0' : '-translate-y-full'
           } flex flex-col p-6`}
         >
@@ -113,8 +114,8 @@ function Navbar() {
               { label: 'Prediction', href: '/prediction' },
               { label: 'Reports', href: '/reports' },
               { label: 'Trends', href: '/trends' },
-              { label: 'Contact', href: '/contact' },
-              { label: 'About Us', href: '/about' },
+              { label: 'Contact', href: '/contact-us' },
+              { label: 'About Us', href: '/about-us' },
             ].map(({ label, href }) => (
               <Link
                 key={label}
